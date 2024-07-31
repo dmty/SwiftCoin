@@ -14,6 +14,9 @@
 		0A5FC9652C59ECEE0011A8F3 /* SwiftCoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5FC9642C59ECEE0011A8F3 /* SwiftCoinTests.swift */; };
 		0A5FC96F2C59ECEE0011A8F3 /* SwiftCoinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5FC96E2C59ECEE0011A8F3 /* SwiftCoinUITests.swift */; };
 		0A5FC9712C59ECEE0011A8F3 /* SwiftCoinUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5FC9702C59ECEE0011A8F3 /* SwiftCoinUITestsLaunchTests.swift */; };
+		0A5FC9862C59EDF90011A8F3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5FC9852C59EDF90011A8F3 /* HomeView.swift */; };
+		0A5FC9882C59EEE90011A8F3 /* TopMoversView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5FC9872C59EEE90011A8F3 /* TopMoversView.swift */; };
+		0A5FC98B2C59EF0C0011A8F3 /* TopMoversItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5FC98A2C59EF0C0011A8F3 /* TopMoversItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		0A5FC96A2C59ECEE0011A8F3 /* SwiftCoinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftCoinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A5FC96E2C59ECEE0011A8F3 /* SwiftCoinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCoinUITests.swift; sourceTree = "<group>"; };
 		0A5FC9702C59ECEE0011A8F3 /* SwiftCoinUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCoinUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0A5FC9852C59EDF90011A8F3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		0A5FC9872C59EEE90011A8F3 /* TopMoversView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoversView.swift; sourceTree = "<group>"; };
+		0A5FC98A2C59EF0C0011A8F3 /* TopMoversItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoversItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +100,11 @@
 		0A5FC9522C59ECEB0011A8F3 /* SwiftCoin */ = {
 			isa = PBXGroup;
 			children = (
-				0A5FC9532C59ECEB0011A8F3 /* SwiftCoinApp.swift */,
+				0A5FC9812C59ED430011A8F3 /* App */,
+				0A5FC9802C59ED3F0011A8F3 /* Core */,
+				0A5FC97E2C59ED2B0011A8F3 /* Extensions */,
+				0A5FC97F2C59ED390011A8F3 /* Models */,
+				0A5FC97D2C59ED240011A8F3 /* Utils */,
 				0A5FC9552C59ECEB0011A8F3 /* ContentView.swift */,
 				0A5FC9572C59ECED0011A8F3 /* Assets.xcassets */,
 				0A5FC9592C59ECED0011A8F3 /* Preview Content */,
@@ -125,6 +135,69 @@
 				0A5FC9702C59ECEE0011A8F3 /* SwiftCoinUITestsLaunchTests.swift */,
 			);
 			path = SwiftCoinUITests;
+			sourceTree = "<group>";
+		};
+		0A5FC97D2C59ED240011A8F3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0A5FC97E2C59ED2B0011A8F3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0A5FC97F2C59ED390011A8F3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0A5FC9802C59ED3F0011A8F3 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0A5FC9822C59ED980011A8F3 /* Home */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		0A5FC9812C59ED430011A8F3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0A5FC9532C59ECEB0011A8F3 /* SwiftCoinApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		0A5FC9822C59ED980011A8F3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0A5FC9832C59EDBE0011A8F3 /* Views */,
+				0A5FC9842C59EDC30011A8F3 /* ViewModels */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0A5FC9832C59EDBE0011A8F3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0A5FC9852C59EDF90011A8F3 /* HomeView.swift */,
+				0A5FC9872C59EEE90011A8F3 /* TopMoversView.swift */,
+				0A5FC98A2C59EF0C0011A8F3 /* TopMoversItemView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0A5FC9842C59EDC30011A8F3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +330,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A5FC9882C59EEE90011A8F3 /* TopMoversView.swift in Sources */,
+				0A5FC9862C59EDF90011A8F3 /* HomeView.swift in Sources */,
 				0A5FC9562C59ECEB0011A8F3 /* ContentView.swift in Sources */,
 				0A5FC9542C59ECEB0011A8F3 /* SwiftCoinApp.swift in Sources */,
+				0A5FC98B2C59EF0C0011A8F3 /* TopMoversItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
